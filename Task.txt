@@ -1,0 +1,68 @@
+                   Difference between HTTP1.1 and HTTP2
+
+HTTP 1.1 and HTTP 2 are different versions of the Hypertext Transfer protocol, 
+which is used for communications between web browsers and servers
+
+HTTP 1.1 was designed in the later of 1990's. It has only one request can be sent to 
+TCP connection at a time, leading to the head of line blocking problem.
+
+HTTP 2 was designed by 2015. It has allows multiple requests and responses to be sent
+concurrenctly over a single TCP connection, eliminating the need for multiple connections
+and improving performance
+
+HTTP 1.1 was using the plain text for its protocol, which can be inefficient in terms
+of parsing and processing
+
+HTTP 2 is using for the binary protocol, which is more efficient for the client and
+servers. The binary framing format is more efficient and reduces overhead.
+
+HTTP 1 is sends headers with each request and response, resulting in redundant data
+transfer.
+
+HTTP 2 headers are compressed using a technique called HPACK. This compression reduce the
+overhead associated with header fields, and resulting is faster and more efficient data
+transmissing.
+
+HTTP 1.1 was each request and response cycle, the TCP connection is closed by default,
+and subsequent requests require establishing a new connection.
+
+HTTP 2 is allowing multiple requests and responses to be served over the same connections 
+for each request, it was introduce the server push, it is allowed to the server to send additional
+resources for without waiting for the client. This feature helps to more efficient resource delivery.
+
+
+                    OBJECTS AND ITS INTERNAL REPRESENTATION IN JAVASCRIPT
+
+An object is one of the important datatype in javascript. 
+
+An object is key value pair structure in javascript, and non-primitive or reference datatype.    
+The value was stored in the object was reference address.
+
+sytax:
+var objectname = { 
+    key1:value,
+    key2:value, 
+    keyn:value
+};
+
+To accessing value in javascript object is two types
+objectname.key1;
+objectname["key2"];
+
+Same as different operation to perform the object in javascript. ie update,
+delete, and insert operations.
+
+update:
+objectname.key1=new value;
+
+insert:
+objectname.key3=value;
+
+delete:
+delete objectname.key2;
+
+The javascript is created to the every method is called as an object to 
+identify.
+
+
+
